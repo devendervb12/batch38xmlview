@@ -14,17 +14,25 @@
 		<script>
 		
 		sap.ui.localResources("view");
+		sap.ui.localResources("controller");
 		
 		    var oview1 = sap.ui.view({
 		    	id : "idview1",
 		    	viewName : "view.Page1",
 		    	type : "XML"
 		    });
-		    // new sap.ui.core.mvc.View({    })
-		    // new sap.m.Button();
+		    
+		    var oview2 = sap.ui.view({
+		    	id : "idview2",
+		    	viewName : "view.Page2",
+		    	type : "XML"
+		    });
+		   
+		    
 			new sap.m.App({
 				pages : [
-					oview1
+					oview1,
+					oview2
 				]
 			}).placeAt("content");
 		</script>
